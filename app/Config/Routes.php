@@ -15,9 +15,5 @@ $routes->group(
         $routes->post('weather/refresh', 'Weather::refresh');
         $routes->get('weather/logs', 'Weather::logs');
         $routes->get('weather/logs/(:num)', 'Weather::show/$1');
-
-        $routes->post('tickets', 'Tickets::create');
-        $routes->get('tickets', 'Tickets::index');
-        $routes->get('tickets/(:num)', 'Tickets::show/$1');
     }
 );

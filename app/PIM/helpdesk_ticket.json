@@ -1,0 +1,11 @@
+{
+  "entity": "HelpdeskTicket",
+  "fields": [
+    { "name": "requesterName", "type": "text", "required": true },
+    { "name": "subject", "type": "text", "required": true },
+    { "name": "description", "type": "longtext", "required": true },
+    { "name": "priority", "type": "wholenumber", "required": true },
+    { "name": "isResolved", "type": "yesno", "required": false },
+    { "name": "submittedAt", "type": "datetime", "required": true }
+  ]
+}

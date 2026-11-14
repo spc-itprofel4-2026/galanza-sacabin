@@ -1,0 +1,11 @@
+{
+  "entity": "HelpdeskTicket",
+  "marks": [
+    { "target": "HelpdeskTicket", "mark": "tableName", "value": "helpdesk_tickets" },
+    { "target": "ticketNumber", "mark": "unique", "value": true },
+    { "target": "status", "mark": "size", "value": 20 },
+    { "target": "priority", "mark": "size", "value": 10 },
+    { "target": "concernText", "mark": "size", "value": 255 },
+    { "target": "transferReason", "mark": "size", "value": 255 }
+  ]
+}

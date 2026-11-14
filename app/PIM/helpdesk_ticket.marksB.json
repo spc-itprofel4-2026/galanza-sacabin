@@ -1,0 +1,10 @@
+{
+  "entity": "HelpdeskTicket",
+  "marks": [
+    { "target": "HelpdeskTicket", "mark": "tableName", "value": "registrar_tickets" },
+    { "target": "concernText", "mark": "unique", "value": true },
+    { "target": "status", "mark": "size", "value": 12 },
+    { "target": "priority", "mark": "size", "value": 6 },
+    { "target": "concernText", "mark": "size", "value": 120 }
+  ]
+}

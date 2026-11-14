@@ -8,5 +8,5 @@ class HelpdeskTicketModel extends Model
 {
     protected $table = 'helpdesk_tickets';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['requester_name', 'subject', 'description', 'priority', 'is_resolved', 'submitted_at'];
+    protected $allowedFields = ['ticket_number', 'status', 'priority', 'concern_text', 'transfer_reason'];
 }

@@ -1,9 +1,8 @@
 CREATE TABLE helpdesk_tickets (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    requester_name VARCHAR(255) NOT NULL,
-    subject VARCHAR(255) NOT NULL,
-    description TEXT NOT NULL,
-    priority INT NOT NULL,
-    is_resolved TINYINT(1),
-    submitted_at DATETIME NOT NULL
+    ticket_number VARCHAR(255) NOT NULL UNIQUE,
+    status VARCHAR(20) NOT NULL,
+    priority VARCHAR(10) NOT NULL,
+    concern_text VARCHAR(255) NOT NULL,
+    transfer_reason VARCHAR(255)
 );

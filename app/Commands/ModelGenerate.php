@@ -124,7 +124,7 @@ class ModelGenerate extends BaseCommand
     private function loadMarks(array $model, string $modelFile, ?string $given): ?array
     {
         $none = ['tableName' => null, 'fields' => []];
-        $path = $given ?? preg_replace('/\.json$/', '', $modelFile) . 'marks.json';
+        $path = $given ?? preg_replace('/\.json$/', '', $modelFile) . '.marks.json';
 
         if (! is_file(ROOTPATH . $path)) {
             if ($given !== null) {
